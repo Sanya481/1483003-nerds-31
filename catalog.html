@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="img/favicon.ico">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -17,37 +17,53 @@
 
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/nerds-logo.svg" width="159" height="65" alt="Логотип интернет магазина">
-      </a>
-      <ul class="site-navigation">
-        <li>
-          <a href="blank.html">Студия</a>
-        </li>
-        <li>
-          <a href="blank.html">Клиенты</a>
-        </li>
-        <li class="site-navigation-current">
-          <a href="catalog.html">Магазин</a>
-        </li>
-        <li>
-          <a href="blank.html">Контакты</a>
-        </li>
-      </ul>
-      <ul class="user-navigation">
-        <li>
-          <a href="blank.html">Корзина</a>
-        </li>
-      </ul>
+      <div class="main-header-bar">
+        <div class="main-navigation-wrapper">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/nerds-logo.svg" width="159" height="65" alt="Логотип интернет магазина">
+          </a>
+          <ul class="site-navigation">
+            <li>
+              <a href="blank.html">Студия</a>
+            </li>
+            <li>
+              <a href="blank.html">Клиенты</a>
+            </li>
+            <li class="site-navigation-current">
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li>
+              <a href="blank.html">Контакты</a>
+            </li>
+          </ul>
+          <ul class="user-navigation">
+            <li>
+              <a href="blank.html">Корзина</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main>
+  <main class="page-catalog container">
 
     <h1 class="page-title">Магазин готовых шаблонов</h1>
 
+    <section class="sort">
+      <h2>Сортировка</h2>
+      <!--Один из скрытых заголовков-->
+      <p class="sort-subtitle">Сортировать:</p>
+      <ul class="sort-list">
+        <li class="sort-item">По цене</li>
+        <li class="sort-item">По типу</li>
+        <li class="sort-item">По названию</li>
+      </ul>
+    </section>
+
     <section class="filters">
-      <h2>Фильтр товаров</h2>      <!--Один из скрытых заголовков-->
+      <h2>Фильтр товаров</h2>
+      <!--Один из скрытых заголовков-->
       <form class="filter" action="https://echo.htmlacademy.ru" method="post">
 
         <fieldset class="cost">
@@ -92,7 +108,8 @@
             </li>
             <li class="feature-item">
               <label for="filter-advantages-block">Блок преимуществ</label>
-              <input class="feature-input-checkbox" id="filter-advantages-block" type="checkbox" name="advantages-block">
+              <input class="feature-input-checkbox" id="filter-advantages-block" type="checkbox"
+                name="advantages-block">
             </li>
             <li class="feature-item">
               <label for="filter-news">Новости</label>
@@ -114,18 +131,9 @@
       </form>
     </section>
 
-    <section class="sort">
-      <h2>Сортировка</h2>      <!--Один из скрытых заголовков-->
-      <p class="sort-subtitle">Сортировать:</p>
-      <ul class="sort-list">
-        <li class="sort-item">По цене</li>
-        <li class="sort-item">По типу</li>
-        <li class="sort-item">По названию</li>
-      </ul>
-    </section>
-
     <section class="templates">
-      <h2>Примеры готовых шаблонов</h2>      <!--Один из скрытых заголовков-->
+      <h2>Примеры готовых шаблонов</h2>
+      <!--Один из скрытых заголовков-->
       <ul class="templates-list">
         <li class="template-item">
           <a class="template-name" href="#">Sedona</a>
@@ -172,10 +180,15 @@
       </ul>
     </section>
 
-    <h2>Контакты</h2>    <!--Один из скрытых заголовков-->
+  </main>
+
+  <div>
+    <h2>Контакты</h2>
+    <!--Один из скрытых заголовков-->
 
     <section class="map-contacts">
-      <h2>Местоположение на карте</h2> <!--Один из скрытых заголовков-->
+      <h2>Местоположение на карте</h2>
+      <!--Один из скрытых заголовков-->
       <img src="img/map-1.jpg" width="1440" height="416" alt="Местоположение интернет магазин «Nёrds» на карте">
       <img src="img/map-marker-1.jpg" width="231" height="190" alt="Маркер на карте">
     </section>
@@ -185,29 +198,33 @@
       <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
       <a class="button" href="blank.html">Напишите нам</a>
     </section>
-  </main>
+  </div>
 
-  <footer class="main-footer">
-    <section class="footer-social">
-      <h2>Как нас найти</h2>      <!--Один из скрытых заголовков-->
-      <ul class="social-list">
-        <li>
-          <a class="social-button" href="#">Вконтакте</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">Фейсбук</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">Инстаграм</a>
-        </li>
-      </ul>
-    </section>
+  <footer class="main-footer page-footer">
+    <div class="container">
+      <section class="footer-social">
+        <h2>Как нас найти</h2>
+        <!--Один из скрытых заголовков-->
+        <ul class="social-list">
+          <li>
+            <a class="social-button" href="#">Вконтакте</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Инстаграм</a>
+          </li>
+        </ul>
+      </section>
 
-    <section class="footer-info">
-      <h2>Специальное предложение</h2> <!--Один из скрытых заголовков-->
-      <p class="footer-text">Давайте дружить, это выгодно!</p>
-      <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
-    </section>
+      <section class="footer-info">
+        <h2>Специальное предложение</h2>
+        <!--Один из скрытых заголовков-->
+        <p class="footer-text">Давайте дружить, это выгодно!</p>
+        <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
   </footer>
 </body>
 

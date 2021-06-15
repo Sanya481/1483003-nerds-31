@@ -90,11 +90,11 @@ img {
 
 
 .main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: 160px 1fr min-content;
+ /*  display: grid;
+  grid-template-columns: 160px 1fr min-content; */
 
- /*  display: flex;
-  justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
   width: 1140px;
   margin: 0 auto;
   padding: 0 10px;
@@ -146,8 +146,8 @@ img {
 /* Inner-page */
 
 .page-catalog {
-  display: grid;
-  grid-template-columns: 360px 1fr;
+ /*  display: grid;
+  grid-template-columns: 360px 1fr; */
 }
 
 .page-title {
@@ -157,11 +157,11 @@ img {
 }
 
  .page-catalog .page-title {
-  grid-column: 1 / -1;
+  /* grid-column: 1 / -1; */
 }
 
  .page-catalog .sort {
-  grid-column: 2 / -1;
+  /* grid-column: 2 / -1; */
 }
 
 .sort {
@@ -221,12 +221,12 @@ img {
 }
 
 .services-list {
-  /* display: flex;
-  margin-right: 80px; */
+  display: flex;
+  margin-right: 80px;
 
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 100px;
+  column-gap: 100px; */
 
   margin: 0;
   padding: 0;
@@ -235,12 +235,12 @@ img {
 
 .service-item {
   width: 300px;
- /*  display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   margin-right: 80px;
 
-  display: grid;
-  text-align: center;
+ /*  display: grid;
+  text-align: center; */
 }
 
 .service-item h3 {
@@ -250,7 +250,7 @@ img {
   margin: 0;
   margin-bottom: 16px;
 
-  grid-row: 2 / 3;
+  /* grid-row: 2 / 3; */
 }
 
 .service-item img {
@@ -323,11 +323,11 @@ img {
 /* Index-columns */
 
 .index-columns {
-  display: grid;
-  grid-template-columns: 1fr min-content;
+ /*  display: grid;
+  grid-template-columns: 1fr min-content; */
 
-  /* display: flex;
-  justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 70px;
 }
 
@@ -411,11 +411,11 @@ img {
 }
 
 .clients-list {
-  /* display: flex;
-  justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; */
 
   margin: 0;
   padding: 0;
@@ -502,10 +502,10 @@ img {
 /* Footer */
 
 .main-footer .container {
- /*  display: flex; */
+  display: flex;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+ /*  display: grid;
+  grid-template-columns: 1fr 1fr; */
 }
 
 .footer-social {
@@ -664,8 +664,8 @@ img {
 }
 
 .templates-list {
-  /* display: flex;
-  flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: wrap;
 
   list-style: none;
   margin: 0;

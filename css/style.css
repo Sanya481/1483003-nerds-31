@@ -215,15 +215,15 @@ img {
 /* Slider */
 
 .slide-1 {
-  background-image: url(../img/nerds-index-slide1.1.png);
+  background-image: url(../img/nerds-index-slide-1.png);
 }
 
 .slide-2 {
- background-image: url(../img/nerds-index-slide2.1.png);
+ background-image: url(../img/nerds-index-slide-2.png);
 }
 
 .slide-3 {
- background-image: url(../img/nerds-index-slide3.1.png);
+ background-image: url(../img/nerds-index-slide-3.png);
 }
 
 .slider  {
@@ -987,7 +987,7 @@ img {
 }
 
 .grid-input-radio:focus + label::before,
-.grid-input-radio:checked + label:focus::after {
+.grid-input-radio:focus + label::after {
   opacity: 1;
 }
 

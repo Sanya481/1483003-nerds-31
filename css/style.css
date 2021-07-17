@@ -679,6 +679,10 @@ img {
   box-shadow: 0px 20px 40px var(--basic-extra-light-khaki);
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-email {
   top: auto;
   bottom: 180px;

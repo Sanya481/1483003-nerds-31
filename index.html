@@ -9,7 +9,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Интернет магазин «Nёrds»</title>
 </head>
 
@@ -234,8 +234,8 @@
         <input class="login-icon-email" id="email-field" type="email" name="mail" placeholder="email@example.com">
       </p>
       <p class="modal-item modal-item__textarea">
-        <label class="textarea-title">Текст письма:</label>
-        <textarea name="letter" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <label for="textarea-field" class="textarea-title">Текст письма:</label>
+        <textarea id="textarea-field" name="letter" cols="30" rows="10" placeholder="В свободной форме"></textarea>
       </p>
       <button class="button button-email" type="submit" value="Отправить">Отправить</button>
     </form>
@@ -243,6 +243,9 @@
       <span class="visually-hidden">Закрыть</span>
     </button>
   </section>
+
+  <script src="js/popup.js"></script>
+
 </body>
 
 </html>
